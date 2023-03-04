@@ -1,16 +1,21 @@
 <?php
 
-session_start();
-print_r($_SESSION);
-echo "<hr/>";
+$user_autenticated = false;
 
 $usuarios_app = array(
-    array('email' => 'admteste@gmail.com', 'senha' => 'abcd'),
-    array('email' => 'userteste@gmail.com', 'senha' => '123456'),
+    array('email' => 'admteste@gmail.com', 'password' => 'abcd'),
+    array('email' => 'userteste@gmail.com', 'password' => '123456'),
 );
 
-echo '<pre>';
-print_r($usuarios_app);
-echo '</pre>';
+foreach($usuarios_app as $user){
 
+    if($user['email'] == $_POST['email'] && $user['password'] == $_POST['password']){
+        $user_autenticated = true;
+    }
+    if($user_autenticated){
+        echo 'Usuario autenticado';
+    } else {
+        echo 'Erro na autenticação do usuário';
+    }
+};
 ?>
