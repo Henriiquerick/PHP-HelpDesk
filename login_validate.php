@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+print_r($_SESSION);
+
 $user_autenticated = false;
 
 $usuarios_app = array(
@@ -15,7 +18,9 @@ foreach($usuarios_app as $user){
 
 if($user_autenticated){
     echo 'Usuario autenticado';
+    $_SESSION['autenticado'] = true;
 } else {
+    $_SESSION['autenticado'] = false;
     header('Location: index.php?login=error');
 };
 ?>
