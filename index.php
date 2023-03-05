@@ -1,6 +1,5 @@
 <?php 
   session_start(); 
-   echo $_SESSION['autenticado'];
 ?>
 <html>
   <head>
@@ -48,6 +47,13 @@
                 ?>
                 <div class='text-danger'>
                   Usuário ou senha inválido(s)
+                </div>
+                <? } ?>
+                <?php 
+                  if(isset($_GET['login']) && $_GET['login'] == 'error2'){
+                ?>
+                <div class='text-danger'>
+                  Você não efetuou o login corretamente
                 </div>
                 <? } ?>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
