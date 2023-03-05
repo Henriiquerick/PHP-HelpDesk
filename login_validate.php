@@ -8,14 +8,14 @@ $usuarios_app = array(
 );
 
 foreach($usuarios_app as $user){
-
     if($user['email'] == $_POST['email'] && $user['password'] == $_POST['password']){
         $user_autenticated = true;
     }
-    if($user_autenticated){
-        echo 'Usuario autenticado';
-    } else {
-        echo 'Erro na autenticação do usuário';
-    }
+};
+
+if($user_autenticated){
+    echo 'Usuario autenticado';
+} else {
+    header('Location: index.php?login=error');
 };
 ?>
