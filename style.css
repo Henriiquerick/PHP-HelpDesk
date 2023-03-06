@@ -33,6 +33,10 @@
     width: 120px;
     height: 50px;
 }
+.home_button{
+    width: 120px;
+    height: 50px;
+}
 
 .card_open_call{
     padding: 30px 0 0 0;
@@ -44,4 +48,8 @@
     padding: 30px 0 0 0;
     width: 100%;
     margin: 0 auto;
+}
+
+.linkButton{
+    text-decoration: none;
 }

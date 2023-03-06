@@ -8,7 +8,6 @@
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -20,8 +19,9 @@
         <img src="./images/logo.png"  class="d-inline-block logo" alt="logo">
         App Help Desk
       </a>
-      <form action="logoff.php" method="post">
-        <input class="btn btn-info opencall" type="submit" value="Open Call" name="openCall">
+      <form action="actions.php" method="post">
+        <input class="btn btn-warning home_button" type="submit" value="Home" name="home">
+        <input class="btn btn-info consultcall" type="submit" value="Consult Call" name="consultCall">
         <input class="btn btn-danger logoff" type="submit" value="Logoff" name="logoff">
       </form>
     </nav>
@@ -32,7 +32,7 @@
         <div class="card_open_call">
           <div class="card">
             <div class="card-header">
-              Abertura de chamado
+              Open call
             </div>
             <div class="card-body">
               <div class="row">
@@ -40,33 +40,39 @@
                   
                   <form>
                     <div class="form-group">
-                      <label>Título</label>
+                      <label>Title</label>
                       <input type="text" class="form-control" placeholder="Título">
                     </div>
                     
                     <div class="form-group">
-                      <label>Categoria</label>
+                      <label>Category</label>
                       <select class="form-control">
-                        <option>Criação Usuário</option>
-                        <option>Impressora</option>
+                        <option>User Creation</option>
+                        <option>Printer</option>
                         <option>Hardware</option>
                         <option>Software</option>
-                        <option>Rede</option>
+                        <option>Network</option>
                       </select>
                     </div>
                     
                     <div class="form-group">
-                      <label>Descrição</label>
+                      <label>Description</label>
                       <textarea class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                        <form action="actions.php" method="post">
+                          <a href="home.php" class="linkButton">
+                            <input class="btn btn-lg btn-warning btn-block" value="Return" name="return">
+                          </a>
+
+                        </form>
+                        
                       </div>
 
                       <div class="col-6">
-                        <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
+                        <button class="btn btn-lg btn-info btn-block" type="submit">Open</button>
                       </div>
                     </div>
                   </form>

@@ -22,6 +22,7 @@
       </a>
       <form action="actions.php" method="post">
         <input class="btn btn-info opencall" type="submit" value="Open Call" name="openCall">
+        <input class="btn btn-info consultcall" type="submit" value="Consult Call" name="consultCall">
         <input class="btn btn-danger logoff" type="submit" value="Logoff" name="logoff">
       </form>
     </nav>

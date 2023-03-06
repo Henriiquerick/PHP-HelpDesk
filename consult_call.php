@@ -20,9 +20,9 @@
         <img src="./images/logo.png"  class="d-inline-block logo" alt="logo">
         App Help Desk
       </a>
-      <form action="logoff.php" method="post">
+      <form action="actions.php" method="post">
+        <input class="btn btn-warning home_button" type="submit" value="Home" name="home">
         <input class="btn btn-info opencall" type="submit" value="Open Call" name="openCall">
-        <input class="btn btn-info consultcall" type="submit" value="Consult Call" name="consultCall">
         <input class="btn btn-danger logoff" type="submit" value="Logoff" name="logoff">
       </form>
     </nav>
@@ -33,30 +33,30 @@
         <div class="card_consult_call">
           <div class="card">
             <div class="card-header">
-              Consulta de chamado
+              Consulta call
             </div>
             
             <div class="card-body">
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Call title...</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+                  <p class="card-text">Call description...</p>
                 </div>
               </div>
 
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Call title...</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Category</h6>
+                  <p class="card-text">Call description...</p>
                 </div>
               </div>
 
               <div class="row mt-5">
                 <div class="col-6">
-                  <a href="home.php">
-                    <button class="btn btn-lg btn-warning btn-block" style="text-decoration: none;">Voltar</button>
+                  <a href="home.php" class='linkButton'>
+                    <button class="btn btn-lg btn-warning btn-block">Return</button>
                   </a>
                 </div>
               </div>

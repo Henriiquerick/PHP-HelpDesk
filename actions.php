@@ -1,16 +1,24 @@
 <?php
-    print_r($_POST);
-    switch(true){
-        case $_POST['logoff']:
-            session_start();
-            session_destroy();
-            header('Location: index.php');
-        
-        case $_POST['openCall']:
-            header('Location: open_call.php');
-    };
-    if($_POST['logoff']){
-        
-    }
+    function actions(){
+        switch(true){
+            case $_POST['logoff']:
+                session_start();
+                session_destroy();
+                header('Location: index.php');
+                break;
+            
+            case $_POST['openCall']:
+                header('Location: open_call.php');
+                break;
     
+            case $_POST['consultCall']:
+                header('Location: consult_call.php');
+                break;
+            
+            case $_POST['home']:
+                header('Location: home.php');
+                break;
+        };
+    }
+    actions();
 ?>
