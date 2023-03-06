@@ -19,6 +19,7 @@ foreach($usuarios_app as $user){
 if($user_autenticated){
     echo 'Usuario autenticado';
     $_SESSION['autenticado'] = true;
+    header('Location: home.php?login=Succesfull');
 } else {
     $_SESSION['autenticado'] = false;
     header('Location: index.php?login=error');

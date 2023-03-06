@@ -27,6 +27,9 @@
         <img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <form action="logoff.php" method="post">
+        <input class="btn btn-danger" type="submit" value="Logoff" name="logoff">
+      </form>
     </nav>
 
     <div class="container">    
@@ -40,10 +43,16 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="./images/formulary_open_call.png" width="70" height="70">
+                  <a href="open_call.php">
+                    <img src="./images/formulary_open_call.png" width="70" height="70">
+                  </a>
+                  
                 </div>
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="./images/formulary_consult_call.png" width="70" height="70">
+                  <a href="consult_call.php">
+                    <img src="./images/formulary_consult_call.png" width="70" height="70">
+                  </a>
+                  
                 </div>
               </div>
             </div>

@@ -23,10 +23,13 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <form action="logoff.php" method="post">
+        <input class="btn btn-danger" type="submit" value="Logoff" name="logoff">
+      </form>
     </nav>
 
     <div class="container">    
