@@ -16,7 +16,7 @@
   <body>
 
   <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="./images/logo.png"  class="d-inline-block logo" alt="logo">
         App Help Desk
       </a>
