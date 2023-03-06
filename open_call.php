@@ -10,32 +10,26 @@
     <title>App Help Desk</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-      .card-abrir-chamado {
-        padding: 30px 0 0 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="home.php">
-        <img src="./images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png"  class="d-inline-block logo" alt="logo">
         App Help Desk
       </a>
       <form action="logoff.php" method="post">
-        <input class="btn btn-danger" type="submit" value="Logoff" name="logoff">
+        <input class="btn btn-info opencall" type="submit" value="Open Call" name="openCall">
+        <input class="btn btn-danger logoff" type="submit" value="Logoff" name="logoff">
       </form>
     </nav>
 
     <div class="container">    
       <div class="row">
 
-        <div class="card-abrir-chamado">
+        <div class="card_open_call">
           <div class="card">
             <div class="card-header">
               Abertura de chamado
@@ -76,7 +70,6 @@
                       </div>
                     </div>
                   </form>
-
                 </div>
               </div>
             </div>
