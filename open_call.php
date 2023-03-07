@@ -1,4 +1,4 @@
-<? include "acess_validator.php"?>
+<? require_once("acess_validator.php")?>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -33,7 +33,7 @@
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form method="post" action="register_call.php">
                     <div class="form-group">
                       <label>Title</label>
                       <input type="text" class="form-control" placeholder="Título">
@@ -57,12 +57,7 @@
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <form action="actions.php" method="post">
-                          <a href="home.php" class="linkButton">
-                            <input class="btn btn-lg btn-warning btn-block" value="Return" name="return">
-                          </a>
-
-                        </form>
+                          <a class="btn btn-lg btn-warning btn-block" href="home.php" class="linkButton">Return</a>
                         
                       </div>
 

@@ -1,4 +1,4 @@
-<? include "acess_validator.php"?>
+<? require_once("acess_validator.php")?>
 <html>
   <head>
     <meta charset="utf-8" />

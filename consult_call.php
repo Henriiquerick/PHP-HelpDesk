@@ -1,4 +1,4 @@
-<? include "acess_validator.php"?>
+<? require_once("acess_validator.php")?>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -9,7 +9,6 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="home.php">
         <img src="./images/logo.png"  class="d-inline-block logo" alt="logo">
@@ -50,9 +49,7 @@
 
               <div class="row mt-5">
                 <div class="col-6">
-                  <a href="home.php" class='linkButton'>
-                    <button class="btn btn-lg btn-warning btn-block">Return</button>
-                  </a>
+                  <a class="btn btn-lg btn-warning btn-block" href="home.php" class="linkButton">Return</a>
                 </div>
               </div>
             </div>
