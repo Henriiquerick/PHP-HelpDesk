@@ -1,7 +1,4 @@
 <?php 
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
 
     $title = str_replace('#', '-', $_POST['title']);
     $category = str_replace('#', '-', $_POST['category']);
@@ -12,5 +9,5 @@
     $arquivo = fopen('archive.txt', 'a');
     fwrite($arquivo, $texto);
     fclose($arquivo);
-    echo $texto;
-?>
+    ?>
+    <? header('Location: home.php')?>
