@@ -36,12 +36,12 @@
                   <form method="post" action="register_call.php">
                     <div class="form-group">
                       <label>Title</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <input name="title" type="text" class="form-control" placeholder="Título">
                     </div>
                     
                     <div class="form-group">
                       <label>Category</label>
-                      <select class="form-control">
+                      <select class="form-control" name="category">
                         <option>User Creation</option>
                         <option>Printer</option>
                         <option>Hardware</option>
@@ -52,13 +52,12 @@
                     
                     <div class="form-group">
                       <label>Description</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea class="form-control" rows="3" name="description"></textarea>
                     </div>
 
                     <div class="row mt-5">
                       <div class="col-6">
                           <a class="btn btn-lg btn-warning btn-block" href="home.php" class="linkButton">Return</a>
-                        
                       </div>
 
                       <div class="col-6">
