@@ -1,5 +1,7 @@
 <?php
-    function actions(){
+$home = false;
+$consult_call = false;
+function actions(){
         switch(true){
             case $_POST['logoff']:
                 session_start();
