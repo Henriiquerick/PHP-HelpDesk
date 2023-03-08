@@ -33,6 +33,7 @@ if($_POST['confirm_password'] != ''){
     echo "<pre>";
     print_r($usuarios_app);
     echo "</pre>";
+    header('Location: index.php');
 }else{
     $_POST['confirm_password'] = $_POST['password'];
 }
