@@ -10,7 +10,7 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
         <img src="./images/logo.png" class="d-inline-block logo" alt="">
         App Help Desk
       </a>
@@ -40,6 +40,9 @@
                 <div class="form-group">
                   <label for="perfil_id">Admin?</label>
                   <input name="perfil_id" id="perfil_id" type="Checkbox" class="form-control">
+                </div>
+                <div class="form-group">
+                  <p>Have account? <a class='link' href="index.php">Login</a></p>
                 </div>
                 <button class="btn btn-lg btn-info btn-block" type="submit">Register</button>
               </form>

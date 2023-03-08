@@ -34,6 +34,9 @@
                 <div class="form-group">
                   <input name="password" type="password" class="form-control" placeholder="password">
                 </div>
+                <div class="form-group">
+                  <p>Don't have account? <a class='link' href="register.php">Register</a></p>
+                </div>
                 <?php 
                   if(isset($_GET['login']) && $_GET['login'] == 'error'){
                 ?>
